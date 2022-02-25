@@ -19,8 +19,8 @@ async def cbstart(_, query: CallbackQuery):
         f"""✨ **مرحبآ عزيزي↤「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
 🤖 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
 ** 💭 انا بكار استطيع تشغيل الموسيقي والفيديو في محادثتك الصوتية **
-💡 ** 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر ! **
-🔖 ** 🔖 لتعلم طريقة تشغيلي بمجموعتك اضغط علي » زر طريقة الاستخدام ! **
+💡 **  تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر ! **
+🔖 **  لتعلم طريقة تشغيلي بمجموعتك اضغط علي » زر طريقة الاستخدام ! **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -33,7 +33,7 @@ async def cbstart(_, query: CallbackQuery):
                 [InlineKeyboardButton("• طريقة الاستخدام •", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("• 📚 الاوامر •", callback_data="cbbasic"),
-                    InlineKeyboardButton("• ❤️ المطور •", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("•❤️ مبرمج السورس •", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
