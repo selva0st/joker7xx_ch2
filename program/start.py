@@ -54,34 +54,34 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
 🤖 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
-** يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram! **
-💡 ** اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر »📚 الأوامر! **
-🔖 ** لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر دليل الاستخدام! **
+** 💭 انا بكار استطيع تشغيل الموسيقي والفيديو في محادثتك الصوتية **
+💡 ** 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر ! **
+🔖 ** 🔖 لتعلم طريقة تشغيلي بمجموعتك اضغط علي » زر طريقة الاستخدام ! **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• اضفني الى مجموعتك •",
+                        "•➕ اضفني الئ مجموعتك ➕•",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("• طريقة الاستخدام •", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("• الاوامر •", callback_data="cbbasic"),
-                    InlineKeyboardButton("• المطور •", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("• 📚 الاوامر •", callback_data="cbbasic"),
+                    InlineKeyboardButton("• ❤️ المطور •", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• قروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "• 👥 جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐬𝐨𝐮𝐫𝐜𝐞 𝐚𝐥𝐚𝐳𝐢𝐳a²¹🐼", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑱𝑶𝑲𝑬𝑹7𝑿 𝑻𝑬𝑨𝑴 •", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "mr lido", url="https://t.me/@J0KER7x"
+                        "• 𝑩𝑨𝑲𝑨𝑹 𝑴𝑼𝑺𝑰𝑪 حساب مساعد •", url="https://t.me/MRLido7x"
                     )
                 ],
             ]
@@ -101,9 +101,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("دبـدو໑بـٰههہ⁽💕🐾₎⇡", url=f"https://t.me/@J0KER7x"),
+                InlineKeyboardButton("• 𝑩𝑨𝑲𝑨𝑹 𝑴𝑼𝑺𝑰𝑪 حساب مساعد •", url=f"https://t.me/MRLido7x"),
                 InlineKeyboardButton(
-                    "𝐬𝐨𝐮𝐫𝐜𝐞 𝐚𝐥𝐚𝐳𝐢𝐳a²¹🐼", url=f"https://t.me/@J0KER7x"
+                    "• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑱𝑶𝑲𝑬𝑹7𝑿 𝑻𝑬𝑨𝑴 •", url=f"https://t.me/J0KER_7x"
                 ),
             ]
         ]
