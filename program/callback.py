@@ -40,12 +40,12 @@ async def cbstart(_, query: CallbackQuery):
                         "• جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐬𝐨𝐮𝐫𝐜𝐞 𝐚𝐥𝐚𝐳𝐢𝐳a²¹🐼", url=f"https://t.me/BANDA1M"
+                        "𝐬𝐨𝐮𝐫𝐜𝐞 joker", url=f"https://t.me/@J0KER7x"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "دبـدو໑بـٰههہ⁽💕🐾₎⇡", url="https://t.me/BANDA2M"
+                        "M", url="https://t.me/@J0KER7x"
                     )
                 ],
             ]
@@ -69,7 +69,7 @@ async def cbguides(_, query: CallbackQuery):
 
  💡 إذا كانت لديك أسئلة  حول هذا البوت ، فيمكنك إخبارنا منن خلال قروب الدعم الخاصة بي هنا ↤ @{GROUP_SUPPORT}
 
- ⚡ ادارة سورس العزايزي @BANDA1M
+ ⚡ ادارة سورس جوكر @J0KER7x
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
