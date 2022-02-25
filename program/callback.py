@@ -18,34 +18,34 @@ async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **مرحبآ عزيزي↤「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
 🤖 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
-** يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram! **
-💡 ** اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر »📚 الأوامر! **
-🔖 ** لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر دليل الاستخدام! **
+** 💭 انا بكار استطيع تشغيل الموسيقي والفيديو في محادثتك الصوتية **
+💡 ** 💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر ! **
+🔖 ** 🔖 لتعلم طريقة تشغيلي بمجموعتك اضغط علي » زر طريقة الاستخدام ! **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• اضفني الئ مجموعتك •",
+                        "➕ اضفني الئ مجموعتك ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("• طريقة الاستخدام •", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("• الاوامر •", callback_data="cbbasic"),
-                    InlineKeyboardButton("• المطور •", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("• 📚 الاوامر •", callback_data="cbbasic"),
+                    InlineKeyboardButton("• ❤️ المطور •", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "• 👥 جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐬𝐨𝐮𝐫𝐜𝐞 joker", url=f"https://t.me/@J0KER7x"
+                        "• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑱𝑶𝑲𝑬𝑹7𝑿 𝑻𝑬𝑨𝑴 •", url=f"https://t.me/J0KER_7x"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "mr lido", url="https://t.me/@J0KER7x"
+                        "• 𝑩𝑨𝑲𝑨𝑹 𝑴𝑼𝑺𝑰𝑪 حساب مساعد •", url="https://t.me/MRLido7x"
                     )
                 ],
             ]
@@ -67,9 +67,9 @@ async def cbguides(_, query: CallbackQuery):
  5 ↤ في بعض الأحيان ، يمكن أن تساعدك إعادة تحميل البوت باستخدام الأمر /reload في إصلاح بعض المشكلات
  📌 إذا لم ينضم البوت إلى المكالمة ، فتأكد من تشغيل المكالمة  بالفعل ، أو اكتب /userbotleave ثم اكتب /userbotjoin مرة أخرى
 
- 💡 إذا كانت لديك أسئلة  حول هذا البوت ، فيمكنك إخبارنا منن خلال قروب الدعم الخاصة بي هنا ↤ @{GROUP_SUPPORT}
+💡 إذا كانت لديك أسئلة او مشكلة في تشغيل البوت ، فيمكنك إخبارنا من خلال جروب الدعم الفنى للبوت ↤ @{GROUP_SUPPORT}
 
- ⚡ ادارة سورس جوكر @J0KER7x
+  ⚡️  مبرمج السورس : @J0KER7x
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
@@ -103,7 +103,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 ها هي الأوامر الأساسية:
+        f"""🏮  الأوامر الأساسية:
  » /mplay 「اسم الأغنية / رابط」تشغيل الصوت mp3
  » /vplay 「اسم / رابط الفيديو」 تشغيل الفيديو داخل المكالمة 
 » /stream 「رابط 」تشغيل صوت
@@ -114,7 +114,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /pause ايقاف التشغيل موقتآ
 » /vmute لكتم البوت
 » /vunmute لرفع الكتم عن البوت
- ⚡ ادارة سورس العزايزي @php_7
+   ⚡️  مبرمج السورس : @J0KER7x
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الـتـالـي", callback_data="cbadmin")]]
@@ -134,7 +134,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotleave لطرد حساب المساعد 
  » /ping - إظهار حالة البوت بينغ
  » /alive  إظهار معلومات البوت  (في المجموعة)
-  ⚡ ادارة سورس العزايزي @php_7
+    ⚡️  مبرمج السورس : @J0KER7x
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
@@ -153,7 +153,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - restart your bot
 » /leaveall - order userbot to leave from all group
 
- ⚡ ادارة سورس العزايزي @php_7
+  ⚡️  مبرمج السورس : @J0KER7x
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
