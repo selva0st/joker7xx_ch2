@@ -376,3 +376,4 @@ async def stream(c: Client, m: Message):
                 except Exception as ep:
                     await suhu.delete()
                     await m.reply_text(f"خطاء: `{ep}`")
+ش
