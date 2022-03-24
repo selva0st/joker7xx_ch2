@@ -76,12 +76,12 @@ async def start_(client: Client, message: Message):
                         "• 👥 جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑱𝑶𝑲𝑬𝑹7𝑿 𝑻𝑬𝑨𝑴 •", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "⁽ѕᴇʟᴠᴀ ᴛᴇᴀᴍ₎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• 𝑩𝑨𝑲𝑨𝑹 𝑴𝑼𝑺𝑰𝑪 حساب مساعد •", url="https://t.me/MRLido7x"
+                        "SELVA MUSIC", url="https://t.me/MRLido7x"
                     )
                 ],
             ]
